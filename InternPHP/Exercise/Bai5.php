@@ -1,13 +1,17 @@
 <?php
-    $str = "123456789";
+$str = "123456789";
 
-    $number = (int)$str;
-    $max = 0;
-    while ($number > 0) {
-        $x = $number % 10; 
-        if ($x > $max) {
-            $max = $x;
+$array = str_split($str);
+
+$min = null;
+for ($i = 0; $i < count($array); $i++) {
+    if ($min == null) {
+        $min = $array[$i];
+    } else {
+        if ($array[$i] < $min) {
+            $min = $array[$i];
         }
-        $number = $number/10;
     }
-    echo $max;
+}
+echo "Giá trị nhỏ nhất là $min";
+?>

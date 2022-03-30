@@ -15,7 +15,7 @@
     }
     ?>
     <form action="" method="POST" style="width: 400px; height: 300px;">
-        <h1 style="background-color: #24A19C;margin-bottom: -19px;">HÌNH TRÒN</h1>
+        <h1 style="background-color: #24A19C;margin-bottom: -19px;">Hình tròn</h1>
         <h3 style="background-color: #7CD1B8;padding-top: 20px;">
             <label>
                 Diện tích:

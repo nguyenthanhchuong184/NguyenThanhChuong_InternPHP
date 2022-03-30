@@ -9,9 +9,10 @@
 
 <body>
     <?php
-    echo "<br>";
     if ($_POST["bankinh"] > 0) {
         $dientich = $_POST["bankinh"] * 2 * 3.14;
+    } elseif ($_POST["bankinh"] == null) {
+        $dientich = null;
     }
     ?>
     <form action="" method="POST" style="width: 400px; height: 300px;">

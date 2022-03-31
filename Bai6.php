@@ -1,10 +1,7 @@
 <?php
-$str = "124,888,895";
+$str = "1248,457,895";
 
-$repl = str_replace(',', '', $str);
-
-$array = str_split($repl, 3);
-
+$array = explode(',', $str);
 $max = 0;
 $maxTotal = 0;
 
@@ -18,7 +15,6 @@ foreach ($array as $number) {
             $total += $numberParsed; //6
         }
     }
-
     if ($total > $maxTotal) {
         $maxTotal = $total;
         $max = $number;

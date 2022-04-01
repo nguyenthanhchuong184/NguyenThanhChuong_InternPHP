@@ -60,6 +60,8 @@
             "FFSE1701003" => array("Ngô Việt Anh", "98", "1"),
             "FFSE1701004" => array("Nguyễn Thị Hương Lan", "100", "1")
         );
+        $arHocVien['FFSE1701005'] = array("Nguyễn Thanh Chương", "99", "1");
+        $arHocVien['FFSE1701006'] = array("Huỳnh Tấn Phát", "97", "0");
         foreach ($arHocVien as $key => $value) {
             if ($value[2] == 1) {
                 echo "
@@ -71,34 +73,20 @@
                 </tr>
             ";
             }
-            // $arHocVien['FFSE1701005'] = array("Nguyễn Thanh Chương", "99", "1");
-            // $arHocVien['FFSE1701006'] = array("Huỳnh Tấn Phát", "20", "0");
-            // foreach ($arHocVien as $key => $value) {
-            //     if ($value[2] >= 0) {
-            //         echo "
-            //         <tr>
-            //             <td>$key</td>
-            //             <td>$value[0]</td>
-            //             <td>$value[1]</td>
-            //             <td>$value[2]</td>
-            //         </tr>
-            //     ";
-            //     }
-            //     if ($value[2] == 0) {
-            //         unset($arHocVien[$key]);
-            //     }
-            // }
+            if ($value[2] == 0) {
+                unset($arHocVien[$key]);
+            }
             // $max = 0;
             // if ($value[1] > $max) {
             //     $max = $value[1];
             //     echo "
-            //         <tr>
-            //             <td>$key</td>
-            //             <td>$value[0]</td>
-            //             <td>$max</td>
-            //             <td>$value[2]</td>
-            //         </tr>
-            //     ";
+            //     <tr>
+            //         <td>$key</td>
+            //         <td>$value[0]</td>
+            //         <td>$max</td>
+            //         <td>$value[2]</td>
+            //     </tr>
+            // ";
             // }
         }
         ?>
